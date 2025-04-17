@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Manasa P | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #ffffff);
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(135deg, #004080, #0077b6);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  /* Remove animation for typing and blinking */
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+}
+
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 100%;
+      height: 2px;
+      background-color: #ffcc00;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    nav a:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+
+    section {
+      padding: 1.2rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+      animation: fadeInUp 0.8s ease;
+    }
+
+    h2 {
+      color: #004080;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+      border-bottom: 2px solid #004080;
+      display: inline-block;
+      padding-bottom: 0.2rem;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: space-between;
+    }
+
+    .column {
+      flex: 1;
+      min-width: 280px;
+      background-color: #f1f9ff;
+      padding: 1rem;
+      border-left: 4px solid #004080;
+      border-radius: 8px;
+      animation: slideUp 0.6s ease-in-out;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    a {
+      color: #0077b6;
+    }
+
+    a:hover {
+      color: #004080;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Manasa P</h1>
+    <p>Java Full Stack Developer</p>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>To contribute to the success of a dynamic organization by applying my technical expertise in software development and problem-solving skills, while continuously learning and growing in a collaborative and innovative environment.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="row">
+      <div class="column">
+        <p><strong>Bachelor's Degree:</strong> Computer Science & Engineering</p>
+        <p>City Engineering College, Bangalore</p>
+      </div>
+      <div class="column">
+        <p><strong>Year of Graduation:</strong> 2024</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="row">
+      <div class="column">
+        <p><strong>Languages:</strong> Java, C, SQL, JavaScript</p>
+        <p><strong>Web:</strong> HTML5, CSS3, JavaScript, ReactJS</p>
+      </div>
+      <div class="column">
+        <p><strong>Frameworks:</strong> Spring, Hibernate, JDBC</p>
+        <p><strong>Tools:</strong> Git, Eclipse, VS Code</p>
+        <p><strong>Database:</strong> MySQL</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="row">
+      <div class="column">
+        <h3>Water Quality Prediction</h3>
+        <p>Monitors mariculture water with IoT & ML. Tools: Arduino, Python, Django.</p>
+      </div>
+      <div class="column">
+        <h3>Placement Management System</h3>
+        <p>Helps TPOs manage student records for recruitment.</p>
+      </div>
+      <div class="column">
+        <h3>Airlines Booking</h3>
+        <p>Flight booking platform using HTML, CSS, JS with interactive UI.</p>
+      </div>
+      <div class="column">
+        <h3>Water Reminder App</h3>
+        <p>Android app to remind hydration. Built with Java & Firebase.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <div class="row">
+      <div class="column">
+        <p><strong>Course:</strong> Java Full Stack Development</p>
+        <p><strong>Institute:</strong> J Spiders, Bangalore</p>
+      </div>
+      <div class="column">
+        <p><strong>Duration:</strong> March 2024 – Sept 2024</p>
+        <p><strong>Technologies:</strong> Java, J2EE, Spring, Hibernate, JSP</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="row">
+      <div class="column">
+        <p><strong>Phone:</strong> 9606649328</p>
+        <p><strong>Email:</strong> <a href="mailto:manasapradeep10@gmail.com">manasapradeep10@gmail.com</a></p>
+      </div>
+      <div class="column">
+        <p><strong>Location:</strong> Bangalore, Karnataka</p>
+        <p><strong>ZIP Code:</strong> 560078</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
